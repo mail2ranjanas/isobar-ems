@@ -1,0 +1,73 @@
+<style>
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 20%;
+}
+
+th, td {
+    padding: 6px;
+}
+
+
+.left{
+float:left;
+width:40%;
+overflow:hidden;
+}
+.right{
+float:left;
+width:60%;
+overflow:hidden;
+} 
+
+</style>
+
+
+
+
+<div class="container" align="left">
+<div class="left"><table>
+  <tr>
+    <th>E</th>
+    <th>M</th>
+    <th>S</th>
+  </tr>
+    <tr>
+    <td colspan="3">Please select the passenger floor: <select ng-model="floor" ng-options="x for x in passengerFloor">
+												</select> Floor </td>
+   
+  </tr>
+  <tr>
+    <td><button ng-click="moveUp(floor)"><img ng-src="images/Up.png" height="100" width="100" /></button></td>
+    <td><button ng-click="moveDown(floor)"><img ng-src="images/Down.png" height="100" width="100" /></button></td>
+    <td><button ng-click="moveUp(floor)"><img ng-src="images/stop.png" height="100" width="100" /></button></td>
+  </tr>
+  <tr>
+    <td><button  ng-disabled="isBtnDisbled" ng-click="pressButton(1,currentFloor, elevatorId)"><img ng-src="images/one.png" height="100" width="100" /></button></td>
+    <td><button  ng-disabled="isBtnDisbled" ng-click="pressButton(2,currentFloor, elevatorId)"><img ng-src="images/two.png" height="100" width="100" /></button></td>
+    <td><button  ng-disabled="isBtnDisbled" ng-click="pressButton(3,currentFloor, elevatorId)"><img ng-src="images/three.png" height="100" width="100" /></button></td>
+  </tr>
+  <tr>
+    <td><button  ng-disabled="isBtnDisbled" ng-click="pressButton(4,currentFloor, elevatorId)"><img ng-src="images/four.png" height="100" width="100" /></button></td>
+    <td><button  ng-disabled="isBtnDisbled" ng-click="pressButton(5,currentFloor, elevatorId)"><img ng-src="images/five.png" height="100" width="100" /></button></td>
+    <td><button  ng-disabled="isBtnDisbled" ng-click="pressButton(6,currentFloor, elevatorId)"><img ng-src="images/six.png" height="100" width="100" /></button></td>
+  </tr>
+  
+    <tr>
+    <td colspan="3"> {{emsResponse}} </td>
+   </tr>
+</table></div>
+<div class="right">
+This Elevator Movement Logs from HW API
+
+<textarea ng-model="theTime" rows="20" cols="90"></textarea>
+
+</div>
+</div>
+
+

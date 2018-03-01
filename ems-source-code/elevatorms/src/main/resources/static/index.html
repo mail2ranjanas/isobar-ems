@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Elevator Management System (EMS)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="./js/app.js"> </script>
+<script src="./js/controller/ElevatorCtrl.js"></script>
+<script src="./js/service/ElevatorService.js"></script>
+
+
+<body>
+	<div ng-app="app">
+		<div class="container">
+			<div class="page-header"><h2 class="alert alert alert-success">Elevator Management System (EMS)</h2> </div>
+		</div>
+		<div id="main">
+			<div ng-view></div>
+		</div>
+	</div>
+</body>
+</html>
