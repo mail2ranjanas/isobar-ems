@@ -10,6 +10,7 @@ import com.elevatorms.util.Util;
  * The implementation class for the call back from elevator hardware
  * The logs from the elevator hardware is collected here.
  * The logs are sent to the frontend.
+ * Implementa from the ElevatorCallback interface
  * 
  * @author ranjana
  *
@@ -19,6 +20,7 @@ public class EMSConsumerCallback implements ElevatorCallback{
 	private StringBuilder elevatorLog = null;
 	private Integer currtntFloor = 0;
 	private int elevatorNo=0;
+
 	
 	private static final Logger logger = LoggerFactory.getLogger(EMSConsumerCallback.class);	
 	
