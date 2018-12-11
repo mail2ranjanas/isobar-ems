@@ -62,6 +62,10 @@ GUI
 The following screenshot shows the EMS GUI.
 
 
+Copy rights
+Ranjana
+
+
 
 
 
