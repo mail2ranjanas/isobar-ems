@@ -62,8 +62,8 @@ GUI
 The following screenshot shows the EMS GUI.
 
 
-Copy rights
-Ranjana
+Copy rights 
+Ranjana 2018
 
 
 
